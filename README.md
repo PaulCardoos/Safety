@@ -12,7 +12,7 @@ Next, you will want to navigate over to the guardian page and enter the name, ph
 
 When you feel that you are in trouble you can tap on send location to instantly send you location to your guardian
 
-<img src="sendSafety.png" height=500/>
+<img src="sent.png" height=500/>
 
 You can view your exact location if you tap the location icon
 
