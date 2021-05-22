@@ -1,8 +1,13 @@
 package com.example.recyclergridview;
 
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.telephony.SmsManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -13,6 +18,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 
@@ -23,6 +30,9 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<recyclerViewAdapte
     ArrayList<String> titles;
     //stored as integer because we will be only passing id to images
     ArrayList<Integer> images;
+    private String phoneNumber;
+    private String message;
+    private int MY_PERMISSIONS_REQUEST_SEND_SMS = 0;
 
     public recyclerViewAdapter(ArrayList<String> titles, ArrayList<Integer> images){
         this.titles = titles;
@@ -49,10 +59,8 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<recyclerViewAdapte
                         context.startActivity(intent);
                     }
                     if(title.getText().equals("Send Location")){
-                        CharSequence text = "Location sent to guardian";
-                        int duration = Toast.LENGTH_SHORT;
-                        Toast toast = Toast.makeText(context, text, duration);
-                        toast.show();
+                        Intent intent = new Intent(context, SendMessage.class);
+                        context.startActivity(intent);
 
                     }
                     if(title.getText().equals("Guardian")){
@@ -69,7 +77,10 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<recyclerViewAdapte
                     }
 
                 }
+
             });
+
+
         }
     }
 
@@ -91,4 +102,9 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<recyclerViewAdapte
     public int getItemCount() {
         return titles.size();
     }
+
+
+
+
+
 }
