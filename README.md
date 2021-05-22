@@ -27,3 +27,4 @@ This application that I wanted to develop was an all purpose application that ca
 
 This application target mobile phones and tablets, preferably devices that people can carry around on them (Devices people would likely have on them in an emergency). This application uses google maps api to track your exact location.
 
+<b>RecyclerViewAdapter</b> The recycler view adapter is the controller for th allows the home page to be dynamic and show the tile navigation. In this page we can set onclick listeners for each tile. We check for matching titles and if the title matches we can spark a new activity or send a message.
