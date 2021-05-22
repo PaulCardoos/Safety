@@ -55,8 +55,8 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<recyclerViewAdapte
                         toast.show();
 
                     }
-                    if(title.getText().equals("Guardians")){
-                        Intent intent = new Intent(context, MapsActivity.class);
+                    if(title.getText().equals("Guardian")){
+                        Intent intent = new Intent(context, AddGuardian.class);
                         context.startActivity(intent);
                     }
                     if(title.getText().equals("Settings")){

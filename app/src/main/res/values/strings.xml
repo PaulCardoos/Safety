@@ -7,4 +7,5 @@
     <string name="title_notifications">Notifications</string>
     <string name="guardian_title" />
     <string name="guardian_t">Add a trusted guardian</string>
+    <string name="guardian_email">Add Guardians phone number</string>
 </resources>
