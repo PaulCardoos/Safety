@@ -22,21 +22,21 @@ public class MainActivity extends AppCompatActivity {
         titles = new ArrayList<>();
         images = new ArrayList<>();
 
-        titles.add("Construction");
-        titles.add("Wine");
-        titles.add("Edit");
-        titles.add("Electrical");
-        titles.add("Music");
-        titles.add("Cashier");
+        titles.add("Location");
+        titles.add("Send Location");
+        titles.add("Alert");
+        titles.add("Guardian");
+        titles.add("Settings");
+        titles.add("Help");
         titles.add("Location");
         titles.add("Wifi");
 
-        images.add(R.drawable.construction);
-        images.add(R.drawable.drinks);
-        images.add(R.drawable.edit_red);
-        images.add(R.drawable.electrical);
-        images.add(R.drawable.music);
-        images.add(R.drawable.sales);
+        images.add(R.drawable.send_me_ur_location);
+        images.add(R.drawable.send_location);
+        images.add(R.drawable.alert);
+        images.add(R.drawable.guardian_24);
+        images.add(R.drawable.settings);
+        images.add(R.drawable.help);
         images.add(R.drawable.send_me_ur_location);
         images.add(R.drawable.wifi);
 

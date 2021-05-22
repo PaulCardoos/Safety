@@ -48,9 +48,12 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<recyclerViewAdapte
                         Intent intent = new Intent(context, MapsActivity.class);
                         context.startActivity(intent);
                     }
-                    if(title.getText().equals("Panic")){
-                        Intent intent = new Intent(context, MapsActivity.class);
-                        context.startActivity(intent);
+                    if(title.getText().equals("Send Location")){
+                        CharSequence text = "Location sent to guardian";
+                        int duration = Toast.LENGTH_SHORT;
+                        Toast toast = Toast.makeText(context, text, duration);
+                        toast.show();
+
                     }
                     if(title.getText().equals("Guardians")){
                         Intent intent = new Intent(context, MapsActivity.class);
@@ -64,9 +67,6 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<recyclerViewAdapte
                         Intent intent = new Intent(context, MapsActivity.class);
                         context.startActivity(intent);
                     }
-
-
-
 
                 }
             });
