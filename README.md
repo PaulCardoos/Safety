@@ -41,4 +41,12 @@ This application target mobile phones and tablets, preferably devices that peopl
 
 The application was built on API 28 and targeting new android devices because having the location constantly on does not drain the battery. During initial testing I could not get the recycle view to be dynamic and was stuck on this for a while. It turned out to be a design problem in my custom grid layout. The color scheme was designed to be relaxing so when the person is in a dangerous situation the color is subliminally relaxing. Right now the application does not actually send a message to someone when they hit the send location because I cannot correctly save the user information in shared preference so I am not able to extract this information. This can be fixed given more time and a little guidance. There is no database on the back end because we  are not saving a lot of data. This app is not to track information and store, it is for safety and this is it.
 
+# References
+I referenced the documentation and the textbook (although much of it was deprecated)
+https://developer.android.com/guide
+
+# Experience
+
+This was a fun project although I spent the majority of the time completely lost. It was much different than the homework when we have to come up with a project from scratch. I did not know where to start. I am a little disappointed because I was hoping to make something a little more functional. I wish I took the time to learn Kotlin over the semester because most of the Android apps written in 2021 use Kotlin. I am satisfied with my progress over the semester. I worked hard and did my best so I hope that I do not get an F. Some functions that would have been nice to have would be an option to discretely alert your guardian to your dangerous situation. 
+
 
