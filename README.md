@@ -37,3 +37,8 @@ This application target mobile phones and tablets, preferably devices that peopl
 
 <b>Vector Assets</b> - I was able to design and color some vector assets for the recycler view.
 
+# Application Implementation
+
+The application was built on API 28 and targeting new android devices because having the location constantly on does not drain the battery. During initial testing I could not get the recycle view to be dynamic and was stuck on this for a while. It turned out to be a design problem in my custom grid layout. The color scheme was designed to be relaxing so when the person is in a dangerous situation the color is subliminally relaxing. Right now the application does not actually send a message to someone when they hit the send location because I cannot correctly save the user information in shared preference so I am not able to extract this information. This can be fixed given more time and a little guidance. There is no database on the back end because we  are not saving a lot of data. This app is not to track information and store, it is for safety and this is it.
+
+
